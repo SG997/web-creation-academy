@@ -69,7 +69,7 @@ export default function Page2({ setPage, setCroppedImage, croppedImage }) {
                             onClick={() => ref.current.click()}
                         >
                             <img src={image_add ? image_add : croppedImage} alt="image_add" />
-                            <input type="file" accept="image/png , image/jpeg " className="hidden" ref={ref} onChange={handleImageUpload} />
+                            <input type="file" className="hidden" ref={ref} onChange={handleImageUpload} />
                         </label>
                     </div>
                     <div>
